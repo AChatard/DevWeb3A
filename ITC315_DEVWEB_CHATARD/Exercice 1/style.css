@@ -1,0 +1,17 @@
+h1 {font-size: 18pt;}						/* Taille de la police */
+label										/* Champ de formulaire */
+{
+width: 100px;								/* Taille du label */
+text-align: right;							/* Le texte est aligné à droite */
+display: inline-block;						/* Les lignes restent à côté du label associé */
+vertical-align: baseline;          			/* Définit l'alignement vertical du texte, ici par rapport à la base */
+}
+
+@media screen and (max-width: 480px){ 		/* Vérifie l'ecran et applique le style uniquement si la largeur d'écran est inférieure à 480px */
+  label{
+    width: 100px;
+    text-align: right;
+    display: block; 						/* Si la condition est validée on affiche les étiquettes au-dessus des champs du formulaire */
+    vertical-align: baseline
+  }
+}
